@@ -297,16 +297,16 @@ Disassembly of section .text:
  226:	cf 93       	push	r28
  228:	c8 2f       	mov	r28, r24
  22a:	40 e0       	ldi	r20, 0x00	; 0
- 22c:	62 e0       	ldi	r22, 0x02	; 2
- 22e:	82 e0       	ldi	r24, 0x02	; 2
+ 22c:	64 e0       	ldi	r22, 0x04	; 4
+ 22e:	81 e0       	ldi	r24, 0x01	; 1
  230:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  234:	40 e0       	ldi	r20, 0x00	; 0
- 236:	63 e0       	ldi	r22, 0x03	; 3
- 238:	82 e0       	ldi	r24, 0x02	; 2
+ 236:	65 e0       	ldi	r22, 0x05	; 5
+ 238:	81 e0       	ldi	r24, 0x01	; 1
  23a:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  23e:	40 e0       	ldi	r20, 0x00	; 0
- 240:	64 e0       	ldi	r22, 0x04	; 4
- 242:	82 e0       	ldi	r24, 0x02	; 2
+ 240:	66 e0       	ldi	r22, 0x06	; 6
+ 242:	81 e0       	ldi	r24, 0x01	; 1
  244:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  248:	8b b3       	in	r24, 0x1b	; 27
  24a:	9c 2f       	mov	r25, r28
@@ -315,8 +315,8 @@ Disassembly of section .text:
  250:	89 2b       	or	r24, r25
  252:	8b bb       	out	0x1b, r24	; 27
  254:	41 e0       	ldi	r20, 0x01	; 1
- 256:	64 e0       	ldi	r22, 0x04	; 4
- 258:	82 e0       	ldi	r24, 0x02	; 2
+ 256:	66 e0       	ldi	r22, 0x06	; 6
+ 258:	81 e0       	ldi	r24, 0x01	; 1
  25a:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  25e:	8f ec       	ldi	r24, 0xCF	; 207
  260:	97 e0       	ldi	r25, 0x07	; 7
@@ -325,8 +325,8 @@ Disassembly of section .text:
  266:	00 c0       	rjmp	.+0      	; 0x268 <LCD_WriteCommand+0x42>
  268:	00 00       	nop
  26a:	40 e0       	ldi	r20, 0x00	; 0
- 26c:	64 e0       	ldi	r22, 0x04	; 4
- 26e:	82 e0       	ldi	r24, 0x02	; 2
+ 26c:	66 e0       	ldi	r22, 0x06	; 6
+ 26e:	81 e0       	ldi	r24, 0x01	; 1
  270:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  274:	2b b3       	in	r18, 0x1b	; 27
  276:	30 e1       	ldi	r19, 0x10	; 16
@@ -338,8 +338,8 @@ Disassembly of section .text:
  282:	89 2b       	or	r24, r25
  284:	8b bb       	out	0x1b, r24	; 27
  286:	41 e0       	ldi	r20, 0x01	; 1
- 288:	64 e0       	ldi	r22, 0x04	; 4
- 28a:	82 e0       	ldi	r24, 0x02	; 2
+ 288:	66 e0       	ldi	r22, 0x06	; 6
+ 28a:	81 e0       	ldi	r24, 0x01	; 1
  28c:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  290:	8f ec       	ldi	r24, 0xCF	; 207
  292:	97 e0       	ldi	r25, 0x07	; 7
@@ -348,8 +348,8 @@ Disassembly of section .text:
  298:	00 c0       	rjmp	.+0      	; 0x29a <LCD_WriteCommand+0x74>
  29a:	00 00       	nop
  29c:	40 e0       	ldi	r20, 0x00	; 0
- 29e:	64 e0       	ldi	r22, 0x04	; 4
- 2a0:	82 e0       	ldi	r24, 0x02	; 2
+ 29e:	66 e0       	ldi	r22, 0x06	; 6
+ 2a0:	81 e0       	ldi	r24, 0x01	; 1
  2a2:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  2a6:	8f e0       	ldi	r24, 0x0F	; 15
  2a8:	97 e2       	ldi	r25, 0x27	; 39
@@ -362,16 +362,16 @@ Disassembly of section .text:
 
 000002b6 <LCD_Init>:
  2b6:	41 e0       	ldi	r20, 0x01	; 1
- 2b8:	62 e0       	ldi	r22, 0x02	; 2
- 2ba:	82 e0       	ldi	r24, 0x02	; 2
+ 2b8:	64 e0       	ldi	r22, 0x04	; 4
+ 2ba:	81 e0       	ldi	r24, 0x01	; 1
  2bc:	0e 94 49 00 	call	0x92	; 0x92 <DIO_SetPinDir>
  2c0:	41 e0       	ldi	r20, 0x01	; 1
- 2c2:	63 e0       	ldi	r22, 0x03	; 3
- 2c4:	82 e0       	ldi	r24, 0x02	; 2
+ 2c2:	65 e0       	ldi	r22, 0x05	; 5
+ 2c4:	81 e0       	ldi	r24, 0x01	; 1
  2c6:	0e 94 49 00 	call	0x92	; 0x92 <DIO_SetPinDir>
  2ca:	41 e0       	ldi	r20, 0x01	; 1
- 2cc:	64 e0       	ldi	r22, 0x04	; 4
- 2ce:	82 e0       	ldi	r24, 0x02	; 2
+ 2cc:	66 e0       	ldi	r22, 0x06	; 6
+ 2ce:	81 e0       	ldi	r24, 0x01	; 1
  2d0:	0e 94 49 00 	call	0x92	; 0x92 <DIO_SetPinDir>
  2d4:	41 e0       	ldi	r20, 0x01	; 1
  2d6:	64 e0       	ldi	r22, 0x04	; 4
@@ -417,16 +417,16 @@ Disassembly of section .text:
  338:	cf 93       	push	r28
  33a:	c8 2f       	mov	r28, r24
  33c:	41 e0       	ldi	r20, 0x01	; 1
- 33e:	62 e0       	ldi	r22, 0x02	; 2
- 340:	82 e0       	ldi	r24, 0x02	; 2
+ 33e:	64 e0       	ldi	r22, 0x04	; 4
+ 340:	81 e0       	ldi	r24, 0x01	; 1
  342:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  346:	40 e0       	ldi	r20, 0x00	; 0
- 348:	63 e0       	ldi	r22, 0x03	; 3
- 34a:	82 e0       	ldi	r24, 0x02	; 2
+ 348:	65 e0       	ldi	r22, 0x05	; 5
+ 34a:	81 e0       	ldi	r24, 0x01	; 1
  34c:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  350:	40 e0       	ldi	r20, 0x00	; 0
- 352:	64 e0       	ldi	r22, 0x04	; 4
- 354:	82 e0       	ldi	r24, 0x02	; 2
+ 352:	66 e0       	ldi	r22, 0x06	; 6
+ 354:	81 e0       	ldi	r24, 0x01	; 1
  356:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  35a:	8b b3       	in	r24, 0x1b	; 27
  35c:	9c 2f       	mov	r25, r28
@@ -435,8 +435,8 @@ Disassembly of section .text:
  362:	89 2b       	or	r24, r25
  364:	8b bb       	out	0x1b, r24	; 27
  366:	41 e0       	ldi	r20, 0x01	; 1
- 368:	64 e0       	ldi	r22, 0x04	; 4
- 36a:	82 e0       	ldi	r24, 0x02	; 2
+ 368:	66 e0       	ldi	r22, 0x06	; 6
+ 36a:	81 e0       	ldi	r24, 0x01	; 1
  36c:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  370:	8f ec       	ldi	r24, 0xCF	; 207
  372:	97 e0       	ldi	r25, 0x07	; 7
@@ -445,8 +445,8 @@ Disassembly of section .text:
  378:	00 c0       	rjmp	.+0      	; 0x37a <LCD_WriteData+0x42>
  37a:	00 00       	nop
  37c:	40 e0       	ldi	r20, 0x00	; 0
- 37e:	64 e0       	ldi	r22, 0x04	; 4
- 380:	82 e0       	ldi	r24, 0x02	; 2
+ 37e:	66 e0       	ldi	r22, 0x06	; 6
+ 380:	81 e0       	ldi	r24, 0x01	; 1
  382:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  386:	2b b3       	in	r18, 0x1b	; 27
  388:	30 e1       	ldi	r19, 0x10	; 16
@@ -458,8 +458,8 @@ Disassembly of section .text:
  394:	89 2b       	or	r24, r25
  396:	8b bb       	out	0x1b, r24	; 27
  398:	41 e0       	ldi	r20, 0x01	; 1
- 39a:	64 e0       	ldi	r22, 0x04	; 4
- 39c:	82 e0       	ldi	r24, 0x02	; 2
+ 39a:	66 e0       	ldi	r22, 0x06	; 6
+ 39c:	81 e0       	ldi	r24, 0x01	; 1
  39e:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  3a2:	8f ec       	ldi	r24, 0xCF	; 207
  3a4:	97 e0       	ldi	r25, 0x07	; 7
@@ -468,8 +468,8 @@ Disassembly of section .text:
  3aa:	00 c0       	rjmp	.+0      	; 0x3ac <LCD_WriteData+0x74>
  3ac:	00 00       	nop
  3ae:	40 e0       	ldi	r20, 0x00	; 0
- 3b0:	64 e0       	ldi	r22, 0x04	; 4
- 3b2:	82 e0       	ldi	r24, 0x02	; 2
+ 3b0:	66 e0       	ldi	r22, 0x06	; 6
+ 3b2:	81 e0       	ldi	r24, 0x01	; 1
  3b4:	0e 94 ae 00 	call	0x15c	; 0x15c <DIO_SetPinValue>
  3b8:	8f e0       	ldi	r24, 0x0F	; 15
  3ba:	97 e2       	ldi	r25, 0x27	; 39
